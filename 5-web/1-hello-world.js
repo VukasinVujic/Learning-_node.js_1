@@ -2,7 +2,9 @@ const http = require('http');
 
 
 const requestListener = (req, res) => {
-  res.end('Hello World\n');
+  console.dir(res , {depth: 0});
+  // console.log(req.url);
+  res.end('Hello node\n');
 }
 
 const server = http.createServer(requestListener);
